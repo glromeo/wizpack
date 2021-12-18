@@ -1,0 +1,19 @@
+{
+  "name": "@wizpack/monorepo",
+  "version": "1.0.0",
+  "description": "A collection of javascript projects",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "commons",
+    "web-modules"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "build:watch": "lerna run build:watch --parallel"
+  }
+}
